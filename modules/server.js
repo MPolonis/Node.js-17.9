@@ -18,6 +18,9 @@ function start() {
             case '/upload':
                 handlers.upload(request, response);
                 break;
+            case '/show':
+                handlers.upload(request, response);
+                break;
             default:
                 handlers.error(request, response);
         }
