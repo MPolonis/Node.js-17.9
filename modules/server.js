@@ -15,11 +15,14 @@ function start() {
             case '/start':
                 handlers.welcome(request, response);
                 break;
+            case '/style.css':
+                handlers.styles(request, response);
+                break;
             case '/upload':
                 handlers.upload(request, response);
                 break;
             case '/show':
-                handlers.upload(request, response);
+                handlers.show(request, response);
                 break;
             default:
                 handlers.error(request, response);

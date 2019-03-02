@@ -22,6 +22,14 @@ exports.welcome = function (request, response) {
     });
 }
 
+exports.styles = function (request, response) {
+    fs.readFile('style.css', function (err, style) {
+        response.writeHead(200, { "Content-Type": "text/css" });
+        response.write(style);
+        response.end();
+    });
+}
+
 exports.show = function (request, response) {
     fs.readFile("test.png", "binary", function (error, file) {
         response.writeHead(200, { "Content-Type": "image/png" });

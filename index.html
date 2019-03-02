@@ -4,18 +4,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Upload app</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
     <h1>Wgraj plik</h1>
     <form action="/upload" enctype="multipart/form-data" method="post">
-        <label>Tytuł pliku</label>
-        <input type="text" name="title">
+        <label class="desc">Tytuł pliku</label>
+        <input class="desc" type="text" name="title">
         <br>
-        <label>Plik</label>
-        <input type="file" name="upload" multiple="multiple">
+        <label class="desc">Plik</label>
+        <input class="desc" type="file" name="upload" multiple="multiple">
         <br>
-        <input type="submit" value="Wyślij">
+        <input class="button" type="submit" value="Wyślij">
     </form>
 </body>
 

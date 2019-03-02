@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #e5af42;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 30px 0;
+    text-decoration: underline;
+}
+
+.desc {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.button {
+    background-color: #0D6069;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #0D6069;
+    background-color: #fff;
+}
